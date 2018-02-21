@@ -4,4 +4,6 @@ Wireframes for redesign of University of Missouri - Columbia libraries 'class re
 Todo: hamburger menu for icons on mobile for v2
  Push links to top on all
 
+ Meet next thurs feb 29th
+
 
