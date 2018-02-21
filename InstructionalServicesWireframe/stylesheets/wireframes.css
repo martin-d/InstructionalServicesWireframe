@@ -34,6 +34,10 @@ li.list-group-item:hover {
 	max-width:250px; 
     height: auto;
 }
+
+	.img-thumbnail:hover {
+		background-color:	rgb(243, 243, 243);
+}
 /* FOR V3 */
 /* carousel styles for v3 */
   .carousel-inner > .item > img,
