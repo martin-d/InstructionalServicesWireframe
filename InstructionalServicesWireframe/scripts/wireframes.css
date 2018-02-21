@@ -1,18 +1,28 @@
+/* FOR ALL */
+/* align the widget when viewport width is above 768px */
 @media screen and (min-width: 768px) {
 	#api_upc_cid35_iid1672 {
 		margin-top: -24px;
 	}
 }
 
+/* FOR LISTGROUPS (v1 & v3) */
+/* hover color for listgroup  */
+
+li.list-group-item:hover {
+	background-color: rgb(243, 243, 243);
+}
+
+/* FOR V1 */
+/* for imgs on v1 */
 #max-width-img {
 	display: inline-flex;
 	width: 49%;
 	margin: auto;
 }
-li.list-group-item:hover {
-	background-color: rgb(243, 243, 243);
-}
 
+/* FOR V2 */
+/* styles for cards on v2 */
   .flex-container {
 	display: flex;
 	flex-direction: row;
@@ -24,33 +34,25 @@ li.list-group-item:hover {
 	max-width:250px; 
     height: auto;
 }
+/* FOR V3 */
+/* carousel styles for v3 */
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       width: 100%;
       margin: auto;
 }
+/* background for feature blurb */
 	.carousel-caption {
 		background-color: #f1b82d;
 		border-radius: 20px;
 }
+/* style the heading */
 	.carousel-text-lg {
 		font-size: 1.9em;
 		text-shadow: 1px;
 		font-weight: 1px;
 }
-
+/* style the subheading */
   .carousel-text-md {
 		font-size: 1.3em;
 }
-
-li.list-group-item:hover {
-	background-color: rgb(243, 243, 243);
-}
-
-  .flex-container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-content: center;
-} 
