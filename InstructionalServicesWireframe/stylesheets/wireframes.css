@@ -4,6 +4,19 @@
 	#api_upc_cid35_iid1672 {
 		margin-top: -24px;
 	}
+	#navbar-hide {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#page-header-v1 {
+		display: none;
+	}
+	#first-row {
+		margin-top: 60px;
+	}
+
 }
 
 /* FOR LISTGROUPS (v1 & v3) */
@@ -12,6 +25,8 @@
 li.list-group-item:hover {
 	background-color: rgb(243, 243, 243);
 }
+
+
 
 /* FOR V1 */
 /* for imgs on v1 */
