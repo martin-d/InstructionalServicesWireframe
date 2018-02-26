@@ -1,36 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>v1 - Class Resources // Libraries // Mizzou // University of Missouri</title>
+  <title>v4 - Class Resources // Libraries // Mizzou // University of Missouri</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="stylesheets/wireframes.css">
-  <!-- <style>
+    <style>
+            body {
+                font-family: 'Lato', sans-serif;
+            }
+            
+            .overlay {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                right: 0;
+                background-color: rgb(0,0,0);
+                background-color: rgba(0,0,0, 0.9);
+                overflow-x: hidden;
+                transition: 0.5s;
+            }
+            
+            .overlay-content {
+                position: relative;
+                top: 3%;
+                width: 100%;
+                text-align: center;
+                margin-top: 30px;
+            }
+            
+            .overlay a {
+                padding: 8px;
+                text-decoration: none;
+                font-size: 2.2em;
+                color: #f1b82d;
+                display: block;
+                transition: 0.3s;
+            }
 
-@media screen and (min-width: 768px) {
-	#api_upc_cid35_iid1672 {
-		margin-top: -24px;
+            .overlay a:hover, .overlay a:focus {
+                background-color: #2b2929b7;
 	}
-}
+            
+            /* .overlay .closebtn {
+                position: absolute;
+                top: 40px;
+                right: 45px;
+                font-size: 60px;
+} */
 
-#max-width-img {
-	display: inline-flex;
-	width: 49%;
-	margin: auto;
+            @media screen and (max-height: 450px) {
+              .overlay a {font-size: 20px}
+              .overlay .closebtn {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
 }
-li.list-group-item:hover {
-	background-color: rgb(243, 243, 243);
 }
-	</style> -->
+</style>
 </head>
 <body>
-		<nav class="navbar navbar-inverse navbar-fixed-top" id="navbar-hide">
+              <div id="myNav" class="overlay">
+
+                <div class="overlay-content">
+                        <ul class="list-group" id="list-group-body">
+                                <li ><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+                                <li ><a href="#" >Our Services</a></li>
+                                <li ><a href="#" >Subject Librarians</a></li>
+                                <li ><a href="#" >Instructional Resources</li></a>
+                                <li ><a href="#" >Syllabus Support</li></a>
+                                <li ><a href="#" >Workshops</a></li>
+                                <li ><a href="#" >Book an Instructional Session</a></li>
+                                <li ><a href="#" >Assessment</a></li>
+                                <li ><a href="#" >About Instructional Services</a></li>
+                        </ul>
+                </div>
+              </div>
+              <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                 <div class="navbar-header" onclick="toggleNav()">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                        </button>
+                    <a class="navbar-brand" href="#">University of Missouri Libraries Instructional Support</a>
+                 </div>
+                </div>
+               </nav>
+
+		<!-- <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar-hide">
 				<div class="container-fluid">
 				  <div class="navbar-header">
 					<button style="float:left; margin-left: 5px;" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    
 					  <span class="icon-bar"></span>
 					  <span class="icon-bar"></span>
 					  <span class="icon-bar"></span>
@@ -43,26 +112,16 @@ li.list-group-item:hover {
 					<ul class="nav navbar-nav navbar-right">
 					</ul>
 					<div>
-							<ul class="list-group" id="list-group-body">
-									<li class="list-group-item active">Our Services</a></li>
-									<li class="list-group-item"><a href="#">Subject Librarians</a></li>
-									<li class="list-group-item"><a href="#" >Instructional Resources</li></a>
-									<li class="list-group-item"><a href="#" >Syllabus Support</li></a>
-									<li class="list-group-item"><a href="#" >Workshops</a></li>
-									<li class="list-group-item"><a href="#" >Book an Instructional Session</a></li>
-									<li class="list-group-item"><a href="#" >Assessment</a></li>
-									<li class="list-group-item"><a href="#" >About Instructional Services</a></li>
-							</ul>
 						</div>
 					</div>
 				  </div>
 				</div>
-			  </nav> 
+			  </nav>  -->
 <div class="container">
  <div class="row">
 	<div class="col-sm-8 col-xs-12">
 	   <div class="page-header" id="page-header-v1">
-				<h2 style="word-wrap: keep-all;">University of Missouri Libraries Instructional Support</h2>
+				<h2 style="word-wrap: keep-all;"></h2>
 		 </div>
 	<div class="col-sm-4 col-xs-0">
 	</div>
@@ -78,7 +137,7 @@ li.list-group-item:hover {
       		<p>Fashion axe lumbersexual authentic bicycle rights, single-origin coffee knausgaard polaroid cray. Leggings literally pug scenester franzen semiotics sartorial chicharrones vinyl snackwave succulents letterpress everyday carry art party coloring book. Dreamcatcher tumeric jean shorts health goth chambray marfa freegan. Ennui gluten-free pop-up shaman next level, dreamcatcher semiotics pitchfork flannel typewriter literally venmo subway tile. Celiac DIY iceland truffaut forage unicorn. Knausgaard disrupt sartorial, gluten-free DIY lo-fi everyday carry church-key pug bitters authentic dreamcatcher hammock austin.
 		  	</p>
 			<ul class="list-group">
-					<li class="list-group-item active">Our Services</a></li>
+					<li class="list-group-item list-group-item-info">Our Services</a></li>
 					<li class="list-group-item"><a href="#">Subject Librarians</a></li>
 					<li class="list-group-item"><a href="#" >Instructional Resources</li></a>
 					<li class="list-group-item"><a href="#" >Syllabus Support</li></a>
@@ -87,7 +146,8 @@ li.list-group-item:hover {
 					<li class="list-group-item"><a href="#" >Assessment</a></li>
 					<li class="list-group-item"><a href="#" >About Instructional Services</a></li>
 			</ul>
-	  </div>`sm-4">
+      </div>
+      <div class="col-sm-4">
 			<div id="api_upc_cid35_iid1672"></div>
 			<script type="text/javascript" src="https://api3.libcal.com/api_events.php?iid=1672&m=upc&cid=35&c=&d=&l=5&simple=ul_date&context=object&format=js"> </script>
 			<div>NEWSHUB WIDGET HERE</div>
@@ -98,6 +158,22 @@ li.list-group-item:hover {
   </div>
  </div>
 </div>
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
 
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+    function toggleNav() {
+    var x = document.getElementById("myNav");
+    if (x.style.width === "100%") {
+        x.style.width = "0%";
+    } else {
+        x.style.width = "100%";
+    }
+}
+</script>
 </body>
 </html>
