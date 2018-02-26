@@ -14,7 +14,13 @@
 		display: none;
 	}
 	#first-row {
-		margin-top: 60px;
+		margin-top: 75px;
+	}
+
+}
+@media screen and (max-width: 504px) {
+	#first-row {
+		margin-top: 115px;
 	}
 
 }
@@ -53,7 +59,7 @@ li.list-group-item:hover {
 	align-content: center;
 } 
   .img-thumbnail {
-	max-width:250px; 
+	max-width:300px; 
     height: auto;
 }
 
