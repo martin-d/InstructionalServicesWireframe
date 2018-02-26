@@ -26,6 +26,13 @@ li.list-group-item:hover {
 	background-color: rgb(243, 243, 243);
 }
 
+#list-group-body {
+	-webkit-overflow: hidden;
+	-moz-overflow: hidden;
+	-ms-overflow: hidden;
+	-o-overflow: hidden;
+	overflow: hidden;
+}
 
 
 /* FOR V1 */
