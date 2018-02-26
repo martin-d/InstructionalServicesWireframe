@@ -25,6 +25,9 @@
 	#first-row {
 		margin-top: 115px;
 	}
+	.navbar-brand {
+		font-size: 1em;
+	}
 
 }
 
@@ -120,16 +123,16 @@ body {
 
 .overlay-content {
 	position: relative;
-	top: 10%;
+	top: 5%;
 	width: 100%;
 	text-align: center;
-	margin-top: 30px;
+	margin-top: 20px;
 }
 
 .overlay a {
 	padding: 8px;
 	text-decoration: none;
-	font-size: 2.2em;
+	font-size: 2em;
 	color: #f1b82d;
 	display: block;
 	transition: 0.3s;
