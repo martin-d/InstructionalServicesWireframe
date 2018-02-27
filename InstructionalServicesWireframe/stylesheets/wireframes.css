@@ -23,10 +23,10 @@
 }
 @media screen and (max-width: 504px) {
 	#first-row {
-		margin-top: 115px;
+		margin-top: 75px;
 	}
 	.navbar-brand {
-		font-size: 1em;
+		font-size: 1.5em;
 	}
 
 }
